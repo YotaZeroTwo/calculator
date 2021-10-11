@@ -35,6 +35,11 @@ body {
   border: none;
 }
 
+.button:hover {
+  transition: .2s;
+  outline: 3px solid #646666;
+}
+
 .delete_button {
   grid-column-start: 3;
   grid-column-end: 5;
@@ -63,4 +68,16 @@ body {
   font-weight: bold;
   font-size: 24px;
   padding: 0 5px;
+}
+
+.input:hover {
+  transition: .2s;
+  outline: 3px solid #646666;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }

@@ -13,25 +13,27 @@
       <input class="input">
     </div>
     <div class="container_button">
-      <button class="button button_operator">&radic;</button>
-      <button class="button button_operator">x&sup2;</button>
-      <button class="button delete_button">CE</button>
-      <button class="button">7</button>
-      <button class="button">8</button>
-      <button class="button">9</button>
-      <button class="button button_operator">&divide;</button>
-      <button class="button">4</button>
-      <button class="button">5</button>
-      <button class="button">6</button>
-      <button class="button button_operator">&times;</button>
-      <button class="button">1</button>
-      <button class="button">2</button>
-      <button class="button">3</button>
-      <button class="button button_operator">-</button>
-      <button class="button">0</button>
-      <button class="button button_operator">.</button>
-      <button class="button button_equals">&equals;</button>
-      <button class="button button_operator">+</button>
+      <button class="button button_operator" onclick="sqrt()">&radic;</button>
+      <button class="button button_operator" onclick="square()">x&sup2;</button>
+      <button class="button delete_button" onclick="onOperatorClick('CE')">CE</button>
+      <button class="button" onclick="addValueToInput(7)">7</button>
+      <button class="button" onclick="addValueToInput(8)">8</button>
+      <button class="button" onclick="addValueToInput(9)">9</button>
+      <button class="button button_operator" onclick="onOperatorClick('/')">&divide;</button>
+      <button class="button" onclick="addValueToInput(4)">4</button>
+      <button class="button" onclick="addValueToInput(5)">5</button>
+      <button class="button" onclick="addValueToInput(6)">6</button>
+      <button class="button button_operator" onclick="onOperatorClick('*')">&times;</button>
+      <button class="button" onclick="addValueToInput(1)">1</button>
+      <button class="button" onclick="addValueToInput(2)">2</button>
+      <button class="button" onclick="addValueToInput(3)">3</button>
+      <button class="button button_operator" onclick="onOperatorClick('-')">-</button>
+      <button class="button" onclick="addValueToInput(0)">0</button>
+      <button class="button button_operator" onclick="addValueToInput('.')">.</button>
+      <button class="button button_equals" onclick="equal()">=</button>
+      <button class="button button_operator" onclick="onOperatorClick('+')">+</button>
     </div>
   </div>
+
+  <script src="./index.js"></script>
 </body>
